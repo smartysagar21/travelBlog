@@ -20,3 +20,7 @@ app.use(
 app.use(express.json());
 app.use("/user", userRouter);
 app.use("/posts", postRouter);
+
+app.get("/", (req, res) => {
+  res.send("Hello From Kubree!");
+});
